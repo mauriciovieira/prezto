@@ -41,7 +41,7 @@ alias gbM='git branch -M'
 alias gbs='git show-branch'
 alias gbS='git show-branch -a'
 # git branch track remote
-alias gbtr='for remote in `git branch -r`; do git branch --track $remote; done'
+alias gbtr='for b in $(git branch -r | grep -v -- "->"); do git branch --track ${b##origin/} $b; done'
 
 # Commit (c)
 alias gc='git commit --verbose'
