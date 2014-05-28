@@ -40,6 +40,8 @@ alias gbm='git branch -m'
 alias gbM='git branch -M'
 alias gbs='git show-branch'
 alias gbS='git show-branch -a'
+# git branch track remote
+alias gbtr='for remote in `git branch -r`; do git branch --track $remote; done'
 
 # Commit (c)
 alias gc='git commit --verbose'
@@ -79,6 +81,7 @@ alias gf='git fetch'
 alias gfc='git clone'
 alias gfm='git pull'
 alias gfr='git pull --rebase'
+alias gfa='git fetch --all'
 
 # Grep (g)
 alias gg='git grep'
