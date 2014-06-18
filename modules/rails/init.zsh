@@ -19,6 +19,7 @@ fi
 # Aliases
 #
 
+alias brake='bundle exec rake'
 alias ror='bundle exec rails'
 alias rorc='bundle exec rails console'
 alias rordc='bundle exec rails dbconsole'
@@ -33,5 +34,5 @@ alias rorr='bundle exec rails runner'
 alias rors='bundle exec rails server'
 alias rorsd='bundle exec rails server --debugger'
 alias rorx='bundle exec rails destroy'
-alias rordm2='bundle exec rake db:migrate db:rollback && bundle exec db:migrate'
+alias rordm2='bundle exec rake db:migrate db:rollback && bundle exec rake db:migrate'
 
