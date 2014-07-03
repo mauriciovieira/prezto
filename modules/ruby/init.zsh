@@ -54,6 +54,7 @@ alias rb='ruby'
 if (( $+commands[bundle] )); then
   alias rbb='bundle'
   alias rbbe='bundle exec'
+  alias rbbers='bundle exec rspec'
   alias rbbi='bundle install --path vendor/bundle'
   alias rbbl='bundle list'
   alias rbbo='bundle open'
