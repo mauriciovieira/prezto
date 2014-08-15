@@ -11,6 +11,6 @@ if (( ! $+commands[java] )); then
 fi
 
 # set JAVA_HOME into the shell session.
-if [[ -n $(/usr/libexec/java_home) ]]; then
+if [[ -e /usr/libexec/java_home ]]; then
   export JAVA_HOME=$(/usr/libexec/java_home)
 fi
